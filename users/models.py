@@ -31,7 +31,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     bio = models.CharField(max_length=255,blank=True)
     avatar = models.ImageField(default="user.png")
     cover_image = models.ImageField(default="cover.png")
-    data_joined = models.DateTimeField(default = timezone.now)
+    date_joined = models.DateTimeField(default = timezone.now)
 
     is_staff = models.BooleanField(default = False)
 
