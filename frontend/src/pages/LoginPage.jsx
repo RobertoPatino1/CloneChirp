@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { loginRequest } from "../api/users";
 import { Formik, Field, Form } from "formik";
 import { Link, useNavigate } from "react-router-dom";
-import { BsTwitter } from "react-icons/bs";
+import { BsTwitterX } from "react-icons/bs";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const LoginPage = () => {
       <div className="m-5 p-10 bg-grey-3">
         <div className="w-[300px]  max-w-md space-y-8 md:w-[400px] lg:w-[400px]">
           <div>
-            <BsTwitter className="mx-auto text-sky-500 h-12 w-12" />
+            <BsTwitterX className="mx-auto text-white-500 h-12 w-12" />
             <h2 className="mt-6 text-center text-3xl text-grey">
               Login in to Twitter
             </h2>
