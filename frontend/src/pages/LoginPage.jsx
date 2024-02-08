@@ -3,6 +3,7 @@ import { loginRequest } from "../api/users";
 import { Formik, Field, Form } from "formik";
 import { Link, useNavigate } from "react-router-dom";
 import { BsTwitterX } from "react-icons/bs";
+import { FaEarlybirds } from "react-icons/fa";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -27,9 +28,9 @@ const LoginPage = () => {
       <div className="m-5 p-10 bg-grey-3">
         <div className="w-[300px]  max-w-md space-y-8 md:w-[400px] lg:w-[400px]">
           <div>
-            <BsTwitterX className="mx-auto text-white-500 h-12 w-12" />
+            <FaEarlybirds className="mx-auto text-white-500 h-12 w-12" />
             <h2 className="mt-6 text-center text-3xl text-grey" id="loginTitle">
-              Log in to Twitter
+              Log in to CloneChirp
             </h2>
           </div>
           <Formik
@@ -74,7 +75,7 @@ const LoginPage = () => {
               />
               <button
                 type="submit"
-                className="bg-sky-400 my-2 w-full hover:bg-sky-500 p-2 px-5 rounded-full text-white font-bold"
+                className="bg-sky-500 my-2 w-full hover:bg-sky-600 p-2 px-5 rounded-full text-white font-bold"
               >
                 Login
               </button>
