@@ -1,7 +1,16 @@
+/*
+FONTS
+*/
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   @apply h-full bg-black text-slate-200;
+}
+
+#loginTitle {
+  font-family: "Signika", sans-serif;
 }

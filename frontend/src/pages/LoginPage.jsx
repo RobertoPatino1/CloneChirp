@@ -16,7 +16,6 @@ const LoginPage = () => {
       console.log("loginMutation success");
     },
     onError: (error) => {
-      console.log("ERROR PEDORRO");
       console.error(error);
     },
   });
@@ -29,8 +28,8 @@ const LoginPage = () => {
         <div className="w-[300px]  max-w-md space-y-8 md:w-[400px] lg:w-[400px]">
           <div>
             <BsTwitterX className="mx-auto text-white-500 h-12 w-12" />
-            <h2 className="mt-6 text-center text-3xl text-grey">
-              Login in to Twitter
+            <h2 className="mt-6 text-center text-3xl text-grey" id="loginTitle">
+              Log in to Twitter
             </h2>
           </div>
           <Formik
