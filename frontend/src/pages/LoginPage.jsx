@@ -14,7 +14,7 @@ const LoginPage = () => {
 		mutationFn: loginRequest,
 		onSuccess: () => {
 			queryClient.invalidateQueries("tweets");
-			navigate("/");
+			navigate("/feed");
 			console.log("loginMutation success");
 		},
 		onError: (error) => {
