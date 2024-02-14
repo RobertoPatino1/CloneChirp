@@ -49,7 +49,7 @@ const LoginPage = () => {
                 placeholder="Email Address"
                 className="
                 border-b-[1px] 
-                border-neutral-800 
+                border-white-800 
                 w-full
                 p-5 
                 cursor-pointer 
@@ -66,7 +66,7 @@ const LoginPage = () => {
                 className="
                 my-3
                 border-b-[1px] 
-                border-neutral-800 
+                border-white-800 
                 w-full
                 p-5 
                 cursor-pointer 
