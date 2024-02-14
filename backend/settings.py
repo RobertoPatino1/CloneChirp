@@ -140,6 +140,7 @@ AUTH_USER_MODEL = 'users.User'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',    #TODO: Add web page link when deploying project as another entry
+
 ]
 
 SIMPLE_JWT = {
