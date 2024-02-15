@@ -2,7 +2,6 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { loginRequest } from "../api/users";
 import { Formik, Field, Form } from "formik";
 import { Link, useNavigate } from "react-router-dom";
-import { BsTwitterX } from "react-icons/bs";
 import { FaEarlybirds } from "react-icons/fa";
 import { Loader } from "../components/Loader";
 
@@ -14,7 +13,7 @@ const LoginPage = () => {
 		mutationFn: loginRequest,
 		onSuccess: () => {
 			queryClient.invalidateQueries("tweets");
-			navigate("/feed");
+			navigate("/");
 			console.log("loginMutation success");
 		},
 		onError: (error) => {

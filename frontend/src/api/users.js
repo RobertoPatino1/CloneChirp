@@ -1,6 +1,10 @@
 import { axi } from "./useAxios";
 import { jwtDecode } from "jwt-decode";
 
+export const registerRequest = async (data) => {
+	await axi.post("/users/register/", data);
+};
+
 export const loginRequest = async (data) => {
 	const response = await axi.post("/users/login/", data);
 	const { access, refresh } = response.data;
