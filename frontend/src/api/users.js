@@ -1,6 +1,10 @@
 import { axi } from "./useAxios";
 import { jwtDecode } from "jwt-decode";
 
+export const logout = () => {
+	localStorage.clear();
+};
+
 export const registerRequest = async (data) => {
 	await axi.post("/users/register/", data);
 };

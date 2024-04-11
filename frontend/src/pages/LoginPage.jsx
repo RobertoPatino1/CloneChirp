@@ -73,12 +73,15 @@ const LoginPage = () => {
                 bg-transparent outline-neutral-800 
                 '
 							/>
-							<button
-								type='submit'
-								className='bg-sky-500 my-2 w-full hover:bg-sky-600 p-2 px-5 rounded-full text-white font-bold'
-							>
-								Login
-							</button>
+							{/* TODO: Validate if login was successfull in order to move to feed */}
+							<Link to={"/feed"}>
+								<button
+									type='submit'
+									className='bg-sky-500 my-2 w-full hover:bg-sky-600 p-2 px-5 rounded-full text-white font-bold'
+								>
+									Login
+								</button>
+							</Link>
 						</Form>
 					</Formik>
 

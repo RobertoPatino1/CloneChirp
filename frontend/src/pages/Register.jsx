@@ -117,12 +117,14 @@ const Register = () => {
                 '
 								/>
 								{errors.confirmPassword && <div>{errors.confirmPassword}</div>}
-								<button
-									type='submit'
-									className='bg-sky-500 my-2 w-full hover:bg-sky-600 p-2 px-5 rounded-full text-white font-bold'
-								>
-									Register
-								</button>
+								<Link to={"/login"}>
+									<button
+										type='submit'
+										className='bg-sky-500 my-2 w-full hover:bg-sky-600 p-2 px-5 rounded-full text-white font-bold'
+									>
+										Register
+									</button>
+								</Link>
 							</Form>
 						)}
 					</Formik>

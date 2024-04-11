@@ -7,10 +7,10 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/login' element={<LoginPage />} />
-				{/* <Route path="/" element={<Navigate to="/login" />} /> */}
+				<Route path='/' element={<Navigate to='/login' />} />
 				<Route path='/register' element={<Register />} />
 
-				<Route path='/' element={<Feed />} />
+				<Route path='/feed' element={<Feed />} />
 			</Routes>
 		</BrowserRouter>
 	);
